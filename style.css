@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+main{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 17rem;
+}
+
+h3{
+    margin: 1rem 0;
+     text-align: center;
+}
+.header{
+    width: 100%;
+    padding: 1rem;
+    background-color: #041456;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    position: fixed;
+    top: 0;
+}
+.nav{
+    margin-top: .5rem;
+    padding: .5rem;
+}
+.nav_ul_li{
+    margin-bottom: .5rem;
+}
+.nav_ul_li a {
+    color: white;
+}
+
+.nav_ul_li:hover{
+    text-decoration: underline;
+}
+
+.seccion-uno{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    
+    text-align: center;
+
+}
+.contenedor-items{
+    padding: .7rem;
+    margin: 0 auto;
+}
+.titulo-seccion-uno, .descripcion-seccion-uno, .btn{
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+/*Seccion 2*/
+.seccion-dos{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+}
+
+
+.titulo-secciones{
+    margin-left: 1rem;
+    font-family: 'Kanit', sans-serif;
+}
+.separador{
+    width: 20%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.descripcion-seccion-dos{
+    margin-bottom: 1rem;
+}
+
+.imagen-seccion-dos{
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 738px){
+    main{
+        margin-top: 6rem;
+    }
+    .seccion-dos{
+        display: flex;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .descripcion-seccion-dos{
+        margin-left: 15px;
+        margin-top: 40px;
+        letter-spacing: 1px;line-height: 20px;
+    }
+    .imagen-seccion-dos{
+        width: 250px;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_ul_li{
+        margin-right: .5rem;
+    }
+
+    .seccion-uno{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 968px){
+    .descripcion-seccion-dos{
+        margin-top: 2rem;
+        width: 90%;
+    }
+    .separador-titulo{
+        margin-top: 7rem;
+    }
+    .imagen-seccion-dos{
+        width: 600px;
+    }
+}
